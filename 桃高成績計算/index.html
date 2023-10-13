@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+    <title>成績計算</title>
+    <style>
+        header{
+        width: 100%;
+        text-align: center;
+        }
+        main{
+            width: 100%;
+            text-align: center;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+
+        }
+        .short-input {
+            width: 10%; /* 设置宽度为 150 像素 */
+        }   
+    </style>
+</head>
+<body>
+    <header><h1>分秒快速計算</h1></header>
+    <main>
+        <p id="numR">選手人數:<input  id="num" list="numList">
+            <datalist id="numList">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+            </datalist>
+        </p>
+        <button id="checkBtn">確認</button>
+        <p id="show"></p>
+    </main>
+    
+    <script src="js.js"></script>
+</body>
+</html>
